@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    h1{
+        font-family:Georgia;
+        color: black;
+    }
+
+a:visited {
+    color: purple; 
+}
+
+a:hover {
+    color:#ccff99;
+    text-decoration: underline;
+}
+
+a:active {
+    color:#ffff00;
+}
+
+a:focus {
+    outline: 2px solid #000;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), url('assets/imgs/bgi.jpg');
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    color: #fff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    transition: transform 0.3s;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Anchor tag styles */
+a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block;
+}
+
+/* Styles for available links */
+.ava {
+    color: blue;
+}
+
+.una {
+    color: red;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.unavailable img {
+    filter: grayscale(100%);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout on very small screens */
+    }
+}
+    </style>
+</head>
+<body>
+
+    <h1 align="Center">Subjects</h1>
+    <div class="grid-container">
+        <div class="grid-item una">
+            <img src="assets/imgs/c.png" alt="C-programming">
+            <p>C-programming</p>
+        </div>
+        <div class="grid-item una">
+            <img src="assets/imgs/dld.webp" alt="DLD">
+            <p>Digital logic design</p>
+        </div>
+        <div class="grid-item una">
+            <img src="assets/imgs/ite.jpg" alt="ITE">
+            <p>IT-essentials</p>
+        </div>
+        <div class="grid-item">
+            <a class="ava" href="assets/wps/
+            web/wb.html">
+            <img src="assets/imgs/webd.jpg" alt="Web-disigning">
+            <p>Web-disigning</p>
+            </a>
+        </div>
+        <div class="grid-item una">
+            <img src="assets/imgs/RDBMS.png" alt="RDBMS">
+            <p>RDBMS</p>
+        </div>
+        <div class="grid-item una">
+            
+            <img src="assets/imgs/linux.png" alt="Os">
+            <p>Opreating System</p>
+        </div>
+</body>
+</html>
+ 
