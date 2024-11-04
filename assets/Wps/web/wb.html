@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    h1{
+        font-family:Georgia;
+        color: black;
+    }
+a.download-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+a.download-link:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+a.download-link:active {
+    background-color: #3e8e41; /* Even darker green when clicked */
+}
+
+a.download-link:focus {
+    outline: 2px solid #2e7d32; /* Outline for keyboard navigation */
+} 
+a:visited {
+    color: purple; 
+}
+
+a:hover {
+    color:#ccff99;
+    text-decoration: underline;
+}
+
+a:active {
+    color:#ffff00;
+}
+
+a:focus {
+    outline: 2px solid #000;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)), url('assets/imgs/home/dl.png');
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    color: #fff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    transition: transform 0.3s;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Anchor tag styles */
+a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block;
+}
+
+/* Styles for available links */
+.ava {
+    color: blue;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout on very small screens */
+    }
+}
+    </style>
+</head>
+<body>
+
+    <h1 align="Center">Subjects</h1>
+    <div class="grid-container">
+          <div class="grid-item">
+            
+            <img src="assets/imgs/web/ex1.png" alt="EX1">
+            <a href="assets/wps/web/ex1.html">
+                <p>Output</p>
+            </a><a href="assets/dou/web/WD EX1.pdf">
+            <p>Download EX-1pdf</p></a></div>
+              <div class="grid-item">
+            
+            <img src="assets/imgs/web/ex2.png" alt="EX2">
+            <a href="ex2.html">
+                <p>Output</p>
+            </a><a href="assets/dou/web/WD EX2.pdf">
+            <p>Download EX-2pdf</p></a></div>
+              <div class="grid-item">
+            
+            <img src="assets/imgs/web/ex3.png" alt="EX3">
+            <a href="assets/Wps/web/ex3/min.html">
+                <p>View Output</p>
+            </a>
+            <a href="/assets/dou/web/WD EX3.pdf" download>
+            <p>Download EX-3pdf</p></a></div>
+<div class="grid-item">
+ <img src="assets/imgs/web/ex4.png" alt="EX4">
+            <a href="assets/Wps/web/ex4.html">
+                <p>View Output</p>
+            </a>
+            <a href="/assets/dou/web/WD EX4.pdf" download>
+            <p>Download EX-4pdf</p></a></div>
+
+<div class="grid-item">
+ <img src="assets/imgs/web/ex5.png" alt="EX5">
+            <a href="assets/Wps/web/ex5.html">
+                <p>View Output</p>
+            </a>
+            <a href="/assets/dou/web/WD EX5.pdf" download>
+            <p>Download EX-5pdf</p></div>
+
+<div class="grid-item">
+ <img src="assets/imgs/web/ex6.png" alt="EX6">
+            <a href="assets/Wps/web/ex6.html">
+                <p>View Output</p>
+            </a>
+            <a href="/assets/dou/web/WD EX6.pdf" download>
+            <p>Download EX-6pdf</p></a></div>
+
+<div class="grid-item">
+ <img src="assets/imgs/web/ex7.png" alt="EX7">
+            <a href="assets/Wps/web/ex7.html">
+                <p>View Output</p>
+            </a>
+            <a href="/assets/dou/web/WD EX7.pdf" download>
+            <p>Download EX-7pdf</p></a></div>
+
+<div class="grid-item">
+ <img src="assets/imgs/web/ex8.png" alt="EX8">
+            <a href="assets/Wps/web/8.html">
+                <p>View Output</p>
+            </a>
+            <a href="/assets/dou/web/WD EX8.pdf" download>
+            <p>Download EX-8pdf</p></a></div>
+            
+<div class="grid-item">
+ <img src="assets/imgs/web/ex9.png" alt="EX9">
+            <a href="assets/Wps/web/ex9.html">
+                <p>View Output</p>
+            </a>
+            <a href="/assets/dou/web/WD EX9.pdf" download>
+            <p>Download EX-9pdf</p></a></div>
+            
+<div class="grid-item">
+ <img src="assets/imgs/web/ex10.png" alt="EX10">
+            <a href="assets/Wps/web/ex10/mik.html">
+                <p>View Output</p>
+            </a>
+            <a href="/assets/dou/web/WD EX10.pdf" download>
+            <p>Download EX-10pdf</p></a></div>
+
+        </div>
+</body>
+    </html>
