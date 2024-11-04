@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Registration Form</title>
+
+<style>
+
+.error {
+
+color: red;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Registration Form</h2>
+
+<form action='val.html' method='get' onsubmit="return formValidate()">
+
+<label for="username">Username:</label>
+
+<input type="text" id="username" name="username" required>
+
+<span id="usernameError" class="error"></span>
+
+<br><br>
+
+<label for="email">Email ID:</label>
+
+<input type="email" id="email" name="email" required>
+
+<span id="emailError" class="error"></span>
+
+<br><br>
+
+<label for="password">Password:</label>
+
+<input type="password" id="password" name="password" required>
+
+<br><br>
+<label for="confirmPassword">Retype Password:</label>
+
+<input type="password" id="confirmPassword" name="confirmPassword">
+
+<span id="passwordError" class="error"></span>
+
+<br><br>
+
+<label>Gender:</label>
+
+<input type="radio" id="male" name="gender" value="Male" required> Male
+
+<input type="radio" id="female" name="gender" value="Female" required> Female
+
+<br><br>
+
+<label>Languages Known:</label>
+
+<input type="checkbox" id="english" name="languages" value="English"> English
+
+<input type="checkbox" id="spanish" name="languages" value="Spanish">
+
+Spanish
+
+<input type="checkbox" id="french" name="languages" value="French"> French
+
+<br><br>
+
+<label for="description">Describe Yourself:</label><br>
+
+<textarea id="description" name="description" rows="4" cols="50"></textarea>
+
+<br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+<script>
+
+function formValidate(){
+
+const username = document.getElementById('username').value;
+
+const usernameError = document.getElementById('usernameError');
+
+const email = document.getElementById('email').value;
+
+const emailError = document.getElementById('emailError');
+
+const password = document.getElementById('password').value;
+
+const confirmPassword = document.getElementById('confirmPassword').value;
+
+const passwordError = document.getElementById('passwordError');
+
+if (username.length < 8) {
+
+usernameError.innerHTML = 'Username must be at least 8 characters long.';
+
+return false;
+
+}
+
+else
+
+usernameError.innerHTML = ' ';
+
+if (!email.includes('@')) {
+
+emailError.innerHTML = 'Email ID must contain @ symbol.';
+
+return false;
+
+}
+
+else
+
+emailError.innerHTML = ' ';
+  if (password !== confirmPassword) {
+
+passwordError.innerHTML = 'Passwords do not match.';
+
+return false;
+
+}
+
+else
+
+passwordError.innerHTML = ' ';
+
+}
+
+</script>
+
+</body>
+
+</html>
