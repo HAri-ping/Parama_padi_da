@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic Text Formatting</title>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+div {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+</style>
+<title>Changing Background Color</title>
+</head>
+<body>
+<h1>Change the Background Color</h1>
+<label for="colortxt">Enter a color name or hex code</label><br>
+<input type="text" id="colortxt">
+<button onclick="changecolor()">Change Background Color</button>
+<script>
+function changecolor()
+{
+var color = document.getElementById("colortxt").value;
+document.body.style.backgroundColor = color;
+}
+</script>
+</body>
+</html>
