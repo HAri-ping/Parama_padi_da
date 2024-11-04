@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic Text Formatting</title>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+      background-image: url('assets/imgs/home/jorgen-hendriksen-FxuKYyiH_sI-unsplash.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    
+}
+div {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+</style>
+
+<title>Simple Calculator</title>
+
+<style>
+
+input[type="text"] {
+
+width: 220px;
+
+padding: 10px;
+
+margin: 10px;
+
+border: 3px solid #dad;
+
+border-radius: 5px;
+
+}
+
+h1 {
+
+margin:10px;
+
+}
+
+button {
+
+padding: 10px 18px;
+
+margin: 10px;
+
+border: none;
+
+background-color: #007baa;
+
+color: white;
+
+font-size:18px;
+
+font-weight:bold;
+
+border-radius: 5px;
+
+cursor: pointer;
+
+}
+
+button:hover {
+
+background-color: #bb99cc;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<fieldset style=”width:270px”><legend><h2>Simple Calculator</h2></legend>
+
+<input type="text" id="num1" placeholder="Enter first number">
+
+<br>
+
+<input type="text" id="num2" placeholder="Enter second number">
+
+<br>
+
+<button onclick="add()">+</button>
+
+<button onclick="subtract()">-</button>
+
+<button onclick="multiply()">x</button>
+
+<button onclick="divide()">/</button>
+
+<br>
+
+<input type="text" id="result" placeholder="Result" readonly>
+
+</fieldset>
+
+<script>
+
+function add() {
+
+let num1 = parseFloat(document.getElementById('num1').value);
+
+let num2 = parseFloat(document.getElementById('num2').value);
+
+document.getElementById('result').value = num1 + num2;
+
+}
+
+function subtract() {
+
+let num1 = parseFloat(document.getElementById('num1').value);
+
+let num2 = parseFloat(document.getElementById('num2').value);
+
+document.getElementById('result').value = num1 - num2;
+
+}
+
+function multiply() {
+
+let num1 = parseFloat(document.getElementById('num1').value);
+
+let num2 = parseFloat(document.getElementById('num2').value);
+
+document.getElementById('result').value = num1 * num2;
+
+}
+
+function divide() {
+
+let num1 = parseFloat(document.getElementById('num1').value);
+let num2 = parseFloat(document.getElementById('num2').value);
+
+if (num2 === 0) {
+
+alert("Cannot divide by zero");
+
+} else {
+
+document.getElementById('result').value = num1 / num2;
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html> 
