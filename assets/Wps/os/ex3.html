@@ -1,0 +1,161 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> OS lab </title>
+<style>
+body {
+  border: 5px dashed purple;
+  margin: 10px;
+  padding: 20px;
+  background-color: powderblue;
+  backdrop-filter: blur(10px); /* Glass effect */
+}
+body {
+    border: 6px dashed purple;
+    padding: 16px; /* Add padding to keep content inside the border */
+    box-sizing: border-box; /* Ensures padding and border are included in total width/height */
+}
+
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 8px;
+    }
+}
+
+/* Ensure table is responsive */
+table {
+  width: 100%;
+  max-width: 600px; /* Constrain max width for large screens */
+  border: 5px double hotpink;
+  border-collapse: separate;
+  margin: 5px auto; /* Center on screen */
+}
+
+th, td {
+  border: 1px solid red;
+  padding: 8px;
+}
+
+/* Responsive font size */
+h2, h3, h4 {
+  font-size: 1em;
+}
+
+/* Responsive image */
+img {
+  width: 100%;
+  max-width: 300px; /* Constrain max width for large screens */
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* Styling for links and buttons as per original */
+.a {
+  color: purple;
+}
+
+a {
+  color: purple;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+button {
+  background-color: tomato;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 5px;
+}
+
+button a {
+  color: white;
+  text-decoration: none}
+</style>
+
+</head>
+<body>
+ <center>
+ <b><h3>EX-3: USE THE GENERAL PURPOSE COMMANDS:wc,cal,date,who,tty,ln </h3></b><br></center><hr>
+ 
+<p><b class="a">AIM:-</b> To use the General purpose commands:wc,cal,date,who,tty,ln. </p>
+
+<h4><b>PROCEDURE:-</b></h4>
+
+<p><b class="a">COMMAND:wc-</b>Print the number of lines, words, and bytes in file.</p>
+<p> <b class="a" > Syntax:</b>wc[option][file]</p>
+<table>
+<tr>
+<th> OPTIONS
+<th> MEANING
+</tr>
+<tr>
+<td> -c
+<td> bytes
+</tr>
+<tr>
+<td> -l
+<td> lines
+</tr>
+<tr>
+<td> -c
+<td> words
+</tr>
+</table>
+<p><b class="a">Example:</b>wc-l filename<br>GIves the number of lines<br><br>wc-w filename<br>Gives the number of words<b><b>wc-c filename<br>Gives the number of characters</p><br>
+
+
+<p><b class="a">COMMAND:cal-</b> the cal command display a simple calender.</p>
+<p> <b class="a"> Syntax:</b>cal[option]<br>It display the current month,with weeks starting on sunday</p>
+<p><b class="a">Example:</b>cal</p>
+
+
+
+<p><b class="a">COMMAND:date-</b> display the system date and time.</p>
+<p> <b class="a"> Syntax:</b>date</p>
+<p><b class="a">Example:</b>date</p><br>
+
+<p><b class="a">COMMAND:who-</b>print all username currently logged in.</p>
+<p> <b class="a"> Syntax:</b>who<br>who i am<br>Reports the details about the command user<br><br>whoami<br>Reports the useranme of the command user.</p>
+
+
+
+<p><b class="a">COMMAND:tty-</b> print the filename of the terminal connected to standard input. </p>
+<p> <b class="a"> Syntax:</b>tty</p>
+<p><b class="a">Example:</b>tty<br>(output)/dev/pts/o</p><br>
+
+<p><b class="a">COMMAND:ln-</b> Makes links between files. </p>
+<p> <b class="a"> Syntax:</b>ln target linkname<br>This will create a likn to 'target' with the name'linkname'</p>
+<p><b class="a">Example:</b>ln file1 link1</p><br>
+
+
+<h4><b>OUTPUT:-</b></h4><br>
+<img src="../../imgs/os/oex3.jpg"><br>
+
+
+
+<p><h4><b>RESULT:-</b></h4>
+Thus the usage of the general purpose command wc,cal,date,tty,ln is executed successfully.</p>
+
+<button><a href="ex2.html"> PREVIOUS</a></button>
+<button><a href="ex4.html"> NEXT</a></button>
+<button><a href="osh.html"></a>MAIN PAGE</button>
+
+</body>
+</html>

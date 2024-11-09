@@ -1,0 +1,132 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> OS lab </title>
+<style>
+body {
+  border: 5px dashed purple;
+  margin: 10px;
+  padding: 20px;
+  background-color: powderblue;
+  backdrop-filter: blur(10px); /* Glass effect */
+}
+/* Default styling */
+body {
+    border: 6px dashed purple;
+    padding: 16px; /* Add padding to keep content inside the border */
+    box-sizing: border-box; /* Ensures padding and border are included in total width/height */
+}
+
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 8px;
+    }
+}
+/* Ensure table is responsive */
+table {
+  width: 100%;
+  max-width: 600px; /* Constrain max width for large screens */
+  border: 5px double hotpink;
+  border-collapse: separate;
+  margin: 5px auto; /* Center on screen */
+}
+
+th, td {
+  border: 1px solid red;
+  padding: 8px;
+}
+h4{color:purple;}
+
+/* Responsive font size */
+p, h2, h3, h4 {
+  font-size: 1em;
+}
+
+/* Responsive image */
+img {
+  width: 100%;
+  max-width: 300px; /* Constrain max width for large screens */
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* Styling for links and buttons as per original */
+.a {
+  color: purple;
+}
+
+a {
+  color: purple;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+button {
+  background-color: tomato;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 5px;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+h3{text-transform:uppercase;}
+</style>
+
+</head>
+<body>
+ <center>
+ <b><h3>EX-6: Write a shell script to find factorial of the given number </h3></b><br></center><hr><br>
+ 
+<p><b class="a">AIM:-</b> To write a shell script to find factorial of the given number. </p>
+<br>
+
+<h4><b>PROGRAM-</b></h4>
+
+<p> #!/bin/bash<br>
+echo “Enter the Number”<br>
+read num<br>
+fact=1<br>
+for((i=2;i&lt=num;i++))<br>
+do<br>
+fact=$((fact*i))<br>
+done<br>
+echo $fact<br>
+</p><br>
+
+
+
+
+<h4><b>OUTPUT:-</b></h4><br>
+<img src="../../imgs/os/oex6.jpg"><br>
+
+
+
+<h4><b>RESULT:-</b></h4>
+<p> Thus the shell script to find factorial of the given number is done and executed successfully.</p>
+
+<button><a href="ex5.html"> PREVIOUS</a></button>
+<button><a href="ex7.html"> NEXT</a></button>
+<button><a href="osh.html"></a>MAIN PAGE</button>
+
+</body>
+</html>

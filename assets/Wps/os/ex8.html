@@ -1,0 +1,138 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> OS lab </title>
+<style>
+body {
+  border: 5px dashed purple;
+  margin: 10px;
+  padding: 20px;
+  background-color: powderblue;
+  backdrop-filter: blur(10px); /* Glass effect */
+}
+body {
+    border: 6px dashed purple;
+    padding: 16px; /* Add padding to keep content inside the border */
+    box-sizing: border-box; /* Ensures padding and border are included in total width/height */
+}
+
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 8px;
+    }
+}
+h4{color: purple;}
+
+/* Ensure table is responsive */
+table {
+  width: 100%;
+  max-width: 600px; /* Constrain max width for large screens */
+  border: 5px double hotpink;
+  border-collapse: separate;
+  margin: 5px auto; /* Center on screen */
+}
+
+th, td {
+  border: 1px solid red;
+  padding: 8px;
+}
+
+/* Responsive font size */
+p, h2, h3, h4 {
+  font-size: 1em;
+}
+
+/* Responsive image */
+img {
+  width: 100%;
+  max-width: 300px; /* Constrain max width for large screens */
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* Styling for links and buttons as per original */
+.a {
+  color: purple;
+}
+
+a {
+  color: purple;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+button {
+  background-color: tomato;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 5px;
+}
+
+button a {
+  color: white;
+  text-decoration: none;}
+</style>
+
+</head>
+<body>
+ <center>
+ <b><h3>EX-8: WRITE A SHELL SCRIPT USING COMMAND LINE ARGUMENTS AND REPORTS ON WHETHER IT IS A DIRECTORY, FILE, OR SOMETHING ELSE</h3></b></center>
+ <br>
+ <hr>
+ 
+ <br>
+ 
+<p><b class="a">AIM:-</b> To write a shell script using command line arguments and reports on whether it is a directory,file or something else. </p><br>
+
+<h4><b>PROGRAM-</b></h4>
+
+<p>#!/bin/bash<br>
+echo “Enter the filename”<br>
+read file<br>
+if [-f  $file]<br>
+then<br>
+echo  “File”
+elif [-d  $file]<br>
+then
+echo “Directory”<br>
+else
+echo “something else”<br>
+fi
+
+
+</p><br>
+
+
+
+
+<h4><b>OUTPUT:-</b></h4><br>
+<img src="../../imgs/os/ex8.jpg"><br>
+
+
+
+<h4><b>RESULT:-</b></h4>
+<p> Thus the shell script to using command line arguments and reports on whether it is a directory,file or something else is done and executed successfully.</p>
+
+<button><a href="ex7.html"> PREVIOUS</a></button>
+<button><a href="osh.html"></a>MAIN PAGE</button>
+
+
+</body>
+</html>

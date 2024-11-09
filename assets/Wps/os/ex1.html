@@ -1,0 +1,148 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> OS lab </title>
+<style>
+body {
+  border: 5px dashed purple;
+  margin: 10px;
+  padding: 20px;
+  background-color: powderblue;
+  backdrop-filter: blur(10px); /* Glass effect */
+}
+body {
+    border: 6px dashed purple;
+    padding: 16px; /* Add padding to keep content inside the border */
+    box-sizing: border-box; /* Ensures padding and border are included in total width/height */
+}
+
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 8px;
+    }
+}
+h4{color: purple;}
+
+/* Ensure table is responsive */
+table {
+  width: 100%;
+  max-width: 600px; /* Constrain max width for large screens */
+  border: 5px double hotpink;
+  border-collapse: separate;
+  margin: 5px auto; /* Center on screen */
+}
+
+th, td {
+  border: 1px solid red;
+  padding: 8px;
+}
+
+/* Responsive font size */
+p, h2, h3, h4 {
+  font-size: 1em;
+}
+
+/* Responsive image */
+img {
+  width: 100%;
+  max-width: 300px; /* Constrain max width for large screens */
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* Styling for links and buttons as per original */
+.a {
+  color: purple;
+}
+
+a {
+  color: purple;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+button {
+  background-color: tomato;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 5px;
+}
+
+button a {
+  color: white;
+  text-decoration: none;}
+</style>
+
+</head>
+<body>
+ <center>
+ 
+ <b><h3>EX-1: USAGE OF DIRECTORY MANAGEMENT COMMANDS: ls, cd, pwd, mkdir,rmdir </h3></b><br></center><hr>
+ 
+<p><b class="a">AIM:-</b> To use directory management commands ls,cd,pwd,mkdir,rmdir.</p>
+
+<h4><b>PROCEDURE:-</b></h4>
+
+<p><b class="a">COMMAND:ls-</b> The ls command will list the files and directories within the current working directory.</p>
+<p> <b class="a" > Syntax:</b>ls[option][filename]</p>
+<table>
+<tr>
+<th> OPTIONS
+<th> MEANING
+</tr>
+<tr>
+<td> -l
+<td> will give a long listing
+</tr>
+</table>
+<p><b class="a">Example:</b>ls -l file.txt</p><br>
+
+
+<p><b class="a">COMMAND:cd-</b> Change the current directory.</p>
+<p> <b class="a"> Syntax:</b>cd[directory name]</p>
+<p><b class="a">Example:</b>cd dir-name<br>Moves to directory called dir-name</p>
+<p><b>cd..</b><br>Moves one level up from the current directory</p><br>
+
+
+<p><b class="a">COMMAND:pwd-</b> print name of current/working directory.</p>
+<p> <b class="a"> Syntax:</b>pwd</p>
+<p><b class="a">Example:</b>#pwd<br>/root</p><br>
+E
+<p><b class="a">COMMAND:mkdir-</b> to create a new directory.</p>
+<p> <b class="a"> Syntax:</b>mkdir[option][filename]</p>
+<p><b class="a">Example:</b>mkdir dir1<br>It will create the directory dir1</p><br>
+
+
+<p><b class="a">COMMAND:rmdir-</b> To remove empty directories.</p>
+<p> <b class="a"> Syntax:</b>rmdir[option][directory name]</p>
+<p><b class="a">Example:</b>rmdir dir1</p><br>
+
+
+<h4><b>OUTPUT:-</b></h4><br>
+<img src="../../imgs/os/oex1.jpg"><br>
+
+
+
+<h4><b>RESULT:-</b></h4>
+<p> Thus the usage of directory management commands ls,cd,pwd,mkdir,rmdir is executed successfully.</p>
+<button><a href="ex2.html"> NEXT</a></button>
+<button><a href="osh.html"></a>MAIN PAGE</button>
+</body>
+</html>

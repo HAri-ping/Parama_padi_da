@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OS Lab</title>
+<style>
+
+body {
+    border: 6px dashed purple;
+    margin: 10px;
+    padding: 20px;
+    background-color:powderblue;
+    backdrop-filter: blur(10px); /* Glass effect */
+    box-sizing: border-box; /* Ensures padding and border are included in total width/height */
+}
+
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 8px;
+    }
+}
+
+h4 { color: purple; }
+
+/* Ensure table is responsive */
+table {
+    width: 100%;
+    max-width: 600px; /* Constrain max width for large screens */
+    border: 5px double hotpink;
+    border-collapse: separate;
+    margin: 5px auto; /* Center on screen */
+}
+
+th, td {
+    border: 1px solid red;
+    padding: 8px;
+}
+
+/* Responsive font size */
+p, h2, h3, h4 {
+    font-size: 1em;
+}
+
+/* Responsive image */
+img {
+    width: 100%;
+    max-width: 300px; /* Constrain max width for large screens */
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Styling for links and buttons */
+.a {
+    color: purple;
+}
+
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+button {
+    background-color: tomato;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+ <center>
+ <b><h3>EX-2: USAGE OF FILE MANAGEMENT COMMANDS: cat, chmod, cp, mv, rm, more, file commands</h3></b><br><center><hr>
+ 
+<p><b class="a">AIM:-</b> To use file management commands cat, chmod, cp, mv, rm, more, file commands.</p>
+
+<h4><b>PROCEDURE:-</b></h4>
+
+<p><b class="a">COMMAND: cat -</b> Concatenate files and display on the standard output.</p>
+<p><b class="a">Syntax:</b> cat [option] [filename]</p>
+<table>
+<tr>
+<th>EXAMPLE</th>
+<th>MEANING</th>
+</tr>
+<tr>
+<td>cat f1 (or) cat &lt; f1</td>
+<td>will display the content of the file f1</td>
+</tr>
+<tr>
+<td>cat > f1<br>This is the content<br><kbd>Ctrl</kbd>+<kbd>D</kbd></td>
+<td>will create a file with the name f1</td>
+</tr>
+<tr>
+<td>cat >> f1<br>Append this data<br><kbd>Ctrl</kbd>+<kbd>D</kbd><br><br>cat f1<br>This is the content<br>Append this data</td>
+<td>This command appends data to the already existing file f1</td>
+</tr>
+<tr>
+<td>cat f1 f2 > f3</td>
+<td>writes the content of f1 and f2 to f3</td>
+</tr>
+</table>
+
+<p><b class="a">COMMAND: chmod -</b> Used to change file access permission.</p>
+<p><b class="a">Syntax:</b> chmod <mode> <file></p>
+<p>Mode can be in symbolic representation or an octal number.</p>
+<table>
+<tr>
+<th>SYMBOLS</th>
+<th>MEANING</th>
+<th>SYMBOLS</th>
+<th>MEANING</th>
+<th>SYMBOLS (permission)</th>
+<th>MEANING</th>
+</tr>
+<tr><td>O</td><td>others</td><td>+</td><td>add permission</td><td>r</td><td>read</td></tr>
+<tr><td>u</td><td>owner</td><td>-</td><td>remove permission</td><td>w</td><td>write</td></tr>
+<tr><td>g</td><td>group</td><td>=</td><td>assign permission</td><td>x</td><td>execute</td></tr>
+<tr><td>a</td><td>all</td></tr>
+</table>
+<p><b class="a">Syntax for symbolic values:</b> chmod [u/g/o/a][+/-/=][permission] <filename></p>
+<p><b class="a">Example:</b> chmod u=rwx, g=r file1 (use <code>ls -l filename</code> to find permission level)</p>
+<p><b class="a">Syntax for octal values:</b> chmod n1 n2 n3 <filename><br>n1 - octal value for owner<br>n2 - octal value for group<br>n3 - octal value for others</p>
+<p><b>Octal values:</b> r = 4, w = 2, x = 1, total = r + w + x</p>
+<p><b class="a">Example:</b> chmod 777 f1</p>
+
+<p><b class="a">COMMAND: cp -</b> Copy files and directories.</p>
+<p><b class="a">Syntax:</b> cp [option] <source> <destination></p>
+<p><b class="a">Example:</b> cp file1 file2 <i>(copies file1 into file2)</i></p><br>
+
+<p><b class="a">COMMAND: rm -</b> Remove files.</p>
+<p><b class="a">Syntax:</b> rm [option] <filename></p>
+<p><b class="a">Example:</b> rm file1 <i>(Removes file1)</i></p><br>
+
+<p><b class="a">COMMAND: mv -</b> Move or rename files or directories.</p>
+<p><b class="a">Syntax:</b> mv [option] <source> <destination></p>
+<p><b class="a">Example:</b> mv filename1 filename2</p><br>
+
+<p><b class="a">COMMAND: more -</b> Display text one screen at a time.</p>
+<p><b class="a">Syntax:</b> more [option] <file></p>
+<p><b class="a">Example:</b> more filename</p><br>
+
+<p><b class="a">COMMAND: file -</b> Determine the file type.</p>
+<p><b class="a">Syntax:</b> file [option] <filename></p>
+<p><b class="a">Example:</b> file one<br>one: ASCII text</p><br>
+
+<h4><b>OUTPUT:-</b></h4><br>
+<img src="../../imgs/os/oex2.jpg"><br>
+
+<h4><b>RESULT:-</b></h4>
+<p>Thus, the usage of file management commands cat, chmod, cp, mv, rm, more, and file commands is executed successfully.</p>
+
+<button><a href="ex1.html">PREVIOUS</a></button>
+<button><a href="ex3.html">NEXT</a></button>
+<button><a href="osh.html"></a>MAIN PAGE</button>
+</body>
+</html>
