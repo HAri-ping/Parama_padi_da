@@ -1,0 +1,200 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<title> OS lab </title>
+<style>
+body{
+border:5px dashed purple;
+margin:10px;
+padding:20px;
+background-color:powderblue;
+}
+
+table{
+height:20%;
+width:20%;
+border:5px double hotpink;
+border-collapse:separate; 
+margin:5px;
+}
+
+th,td{
+border:1px solid red;
+}
+
+p{
+color:blue;
+font-size:20px;
+}
+
+img{
+width:50%;
+height:50%;
+}
+
+.a{
+color:purple;
+}
+
+a
+{
+color:purple;
+text-decoration:none;
+
+}
+
+button{
+background-color:tomato;
+}
+
+a:hover
+{
+color:black;
+}
+
+</style>
+
+</head>
+<body>
+ <center><h2>PART-A LINUX COMMANDS</h2></center>
+ 
+ <br><br><hr>
+ 
+ <b><h3>EX-4: Using the simple filters verify pr,head,tail,cut,paste,ml,sort,grep,egrep,fgrep,write,and wall </h3></b><br>
+ 
+<p><b class="a">AIM:-</b> To use the simple filters verify pr,head,tail,cut,paste,ml,sort,grep,egrep,fgrep,write,and wall.</p>
+
+<h4><b>PROCEDURE:-</b></h4>
+
+<p><b class="a">COMMAND:pr-</b> convert text files for printing.</p>
+<p> <b class="a" > Syntax:</b>pr[option][filename]</p>
+<table>
+<tr>
+<th> OPTIONS
+<th> MEANING
+</tr>
+<tr>
+<td> -d
+<td> Double space the output 
+</tr>
+<tr>
+<td> -D format 
+<td> Use format for the header date  
+</tr>
+<tr>
+<td> -h header 
+<td> Use a centered 'header' instead of filename in page header 
+</tr>
+<tr>
+<td> -l PAGE-LENGTH
+<td> Sets the pagelength to PAGE-LENGHT lines
+</tr>
+<tr>
+<td> -O MARGIN 
+<td> Offset each line with MARGIN spaces 
+<tr>
+<td> -W PAGE-WIDTH
+<td> Set page with to PAGE-WIDTH characters 
+</tr>
+</tr>
+</table>
+
+
+
+<p><b class="a">COMMAND:head-</b> output the first part of file.</p>
+<p> <b class="a"> Syntax:</b>head[option][filename]</p>
+<p><b class="a">Example:</b>head-18 filename<br>Display the first 18 lines of the file called filename</p>
+
+
+
+<p><b class="a">COMMAND:tail-</b> Displays lst 10(by default) lines of a file.</p>
+<p> <b class="a"> Syntax:</b>tail[option][filename]</p>
+<p><b class="a">Example:</b>tail-50 file.txt<br>Display the last 10 lines of the file.txt</p><br>
+
+<p><b class="a">COMMAND:cut-</b> Remove section form each line of files.</p>
+<p> <b class="a"> Syntax:</b>cut[option][filename]</p>
+<table>
+<tr>
+<th> OPTIONS
+<th> MEANING
+</tr>
+<tr>
+<td> -b
+<td> Bytes 
+</tr>
+<tr>
+<td> -c
+<td> characters  
+</tr>
+</table>
+<p><b class="a">Example:</b>cat a<br>This is linux<br>OK<br><br>cut-c2 a<br>h<br>k<br><br>cut-c2-3a<br>his<br>k</p><br>
+
+
+<p><b class="a">COMMAND:paste-</b> Joins corresponding lines from files.</p>
+<p> <b class="a"> Syntax:</b>paste[option][directory name]</p>
+<table>
+<tr>
+<th> OPTIONS
+<th> MEANING
+</tr>
+<tr>
+<td> -d=LIST
+<td> Reuse characters from the list insted of tab for the delimiters
+</tr>
+</table>
+<p><b class="a">Example:</b>cat p1<br>1<br>one<br>ONE<br><br>cat p2<br>2<br>two<br>TWO<br>extra<br><br>cat p3<br>3<br>three<br>Three<br><br>cat p4<br>4<br>four<br>FOUR<br><br>
+paste -d="+_+" p3 p2 p1 p4<br>3+2-1=4<br>three+two-one=four<br>THREE+TWO-ONE=FOUR<br>+extra-=</p><br>
+
+<p><b class="a">COMMAND:nl-</b> Number lines of file.</p>
+<p> <b class="a"> Syntax:</b>nl[option][filename]</p>
+<table>
+<tr>
+<th> OPTIONS
+<th> MEANING
+</tr>
+<tr>
+<td> -b STYLE 
+<td> Use style for numbering body lines style is one of the following types.<br>1) a-number all lines<br>2) t-number only non-empty lines<br>3) n-number no lines<br> pBRE-number only lines that contain a match for the basic regular expression
+</tr>
+</table>
+<p><b class="a">Example:</b>nl -b t a<br>1 this is linux<br>2 OK<br>3 fine<br>4 end</p><br>
+
+
+<p><b class="a">COMMAND:sort-</b> sort lines of text files.</p>
+<p> <b class="a"> Syntax:</b>sort[option][filename]</p>
+<p><b class="a">Example:</b>sort a<br>Alpha<br>Beta<br>Gamma<br>Omega<br><br>sort -r a<br>Omega<br>Gamma<br>Beta<br>Alpha</p>
+
+<p><b class="a">COMMAND:grep-</b> Acronym for Global Regular Expression.<br></p><p><b class="a">egrep-</b>Extended for Global Regular Expression Print.<br></p>
+ <p><b class="a">fgrep-</b>Fixed-String Global Regular Expression Print.</p>
+<p> <b class="a"> Syntax:</b>(e/f) grep[option]reg.exp[filename]</p>
+<p><b class="a">Example:<br>grep-n "os" filename:</b>Display the linenumbers containing os.<br><b class="a">grep-e "linux" -e "os" filename:</b>Search for more than one expression<br>
+<b class="a"> egrep +S filename:</b>The characters S matches one or more times.<br><b class="a">egrep 'is|or|go' filename:</b>Lines whixh contain is|or|go<br>
+<b class="a">fgrep "." filename:</b>Do not expand.(dot), instead Searchs the line having .(dot) literally.</p><br>
+
+
+<p><b class="a">COMMAND:write-</b> The write utility sends a message to another user who is logged in.When you and another user use write to sedn message
+to each other,you establish two-way commnication.Initially a write command displays a banner on the other user's terminal,saying that yoy are about to send a message.</p>
+<p> <b class="a"> Syntax:</b>write</p>
+<p><b class="a">Example:</b>write max<br>Hi,Max,are you there?</p><br>
+
+<p><b class="a">COMMAND:wall-</b> Send a message to everybody's terminal.</p>
+<p> <b class="a"> Syntax:</b>wall[message][username]<BR>The length of the message is limited to 20 lines</p><br>
+
+
+
+
+
+<h4><b>OUTPUT:-</b></h4><br>
+<img src="C:\Users\Admin\Downloads\ex1.jpeg"><br>
+
+
+
+<h4><b>RESULT:-</b></h4>
+<p> Thus the usage of the simple filters verify pr,head,tail,cut,paste,nl,sort,grep,egrep,fgrep,write,and wall is executed successfully.</p>
+
+
+<button><a href="ex3.html"> PREVIOUS</a></button>
+<button><a href="ex5.html"> NEXT</a></button>
+
+</body>
+</html>

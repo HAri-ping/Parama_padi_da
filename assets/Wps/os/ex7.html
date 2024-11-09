@@ -1,0 +1,107 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<title> OS lab </title>
+<style>
+body{
+border:5px dashed purple;
+margin:10px;
+padding:20px;
+background-color:powderblue;
+}
+
+table{
+height:20%;
+width:20%;
+border:5px double hotpink;
+border-collapse:separate; 
+margin:5px;
+}
+
+th,td{
+border:1px solid red;
+}
+
+p{
+color:blue;
+font-size:20px;
+}
+
+img{
+width:50%;
+height:50%;
+}
+
+.a{
+color:purple;
+}
+
+a
+{
+color:purple;
+text-decoration:none;
+
+}
+
+button{
+background-color:tomato;
+}
+
+a:hover
+{
+color:black;
+}
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+ <center><h2>PART-B LINUX COMMANDS</h2></center>
+ 
+ <br><br><hr>
+ 
+ <b><h3>EX-7: Write a shell script to perform arithmetic calculator using case statement </h3></b><br>
+ 
+<p><b class="a">AIM:-</b> To write a shell script to perform arithmetic calculator using case statement. </p>
+
+<h4><b>PROGRAM-</b></h4>
+
+<p> #!/bin/bash<br>
+echo “Enter the 1 st Number”<br>
+read n1<br>
+echo “Enter the 2nd Number”<br>
+read n2<br>
+echo “Menu:-  1:Add  2:Sub  3:Multiply  4:Div”<br>
+echo “Enter the choice”<br>
+read  ch<br>
+case $ch in<br>
+1) echo “Addition is: $((n1+n2))”;;<br>
+2) echo “Subtraction is: $((n1-n2))”;;<br>
+3) echo “Multiplication is: $((n1*n2))”;;<br>
+4) echo “Division is: $((n1/n2))”;;<br>
+*) echo “Enter valid choice”;;<br>
+esac<br>
+
+</p><br>
+
+
+
+
+<h4><b>OUTPUT:-</b></h4><br>
+<img src="C:\Users\Admin\Downloads\ex1.jpeg"><br>
+
+
+
+<h4><b>RESULT:-</b></h4>
+<p> Thus the shell script to perform arithmetic calculator using case statementis done and executed successfully.</p>
+
+<button><a href="ex6.html"> PREVIOUS</a></button>
+<button><a href="ex8.html"> NEXT</a></button>
+
+</body>
+</html>
